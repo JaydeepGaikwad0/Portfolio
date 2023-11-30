@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Insert title here</title>
+<style>
+	
+	
+	body {
+		
+		height: 200px;
+		margin:0;
+		display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #ecf0f1;
+      padding: 25%;
+	}
+	body {
+  background-image: url('taylor-van-riper-yQorCngxzwI-unsplash.jpg');
+    background-size: cover;
+    
+    
+    }
+nav {
+            background-color: #ffffff; /* Add your desired background color */
+            border-bottom: 1px solid #dddddd; /* Add a border if needed */
+            position: absolute;
+            top: 0;
+            z-index:1000;
+            width: 100%;
+        }
+     #fallingWord {
+     position: absolute;
+      top: 0;
+      left: 50%;
+      color: skyblue;
+      transform: translateX(-50%);
+      font-size: 24px;
+      transition: top 1s ease-in-out;
+    }
+    #Home {
+      position: absolute;
+      top: 45%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px; /* Adjust the font size as needed */
+    }
+    #birdImage{
+		
+		 position: absolute;
+      top: 50%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      height: auto;
+      background-color: white;
+       mix-blend-mode: multiply; 
+		
+	}
+	#walkingman{
+		
+		 position: absolute;
+      top: 150%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      height: auto;
+      background-color: transparent;
+       mix-blend-mode: multiply; 
+       
+		
+	}
+	
+	#About{
+		position: absolute;
+      top: 100%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+		
+		
+		
+	}
+	
+	#Education{
+		position: absolute;
+      top: 280%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+     text-align: right;
+	   max-width: 80%;
+		
+	}
+	#Education1{
+		position: absolute;
+      top: 120%; /* Adjust this value based on your design */
+      left: 20%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+		#Education2{
+		position: absolute;
+      top:0%; /* Adjust this value based on your design */
+      left: 150%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+		#education{
+		position: absolute;
+      top: 160%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+	#Contact{
+		position: absolute;
+      top: 350%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+		/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 550px) {
+  body {
+    /* Adjust styles for smaller screens */
+	  padding: 10%;
+	  
+	  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+   background-size: inherit;
+	  
+	  
+	  
+	  
+  }
+  
+  #fallingWord {
+    top: -50%; /* Adjust this value to center the falling word */
+    font-size: 16px;
+    text-align: center; /* Center the text */
+    left: 60%; /* Center the falling word horizontally */
+    transform: translateX(-50%);
+    transition: top 1s ease-in-out;
+  }
+   h1 {
+    font-size: 30px; /* Adjust the font size for the header */
+    text-align: center; /* Center the header text */
+  }
+  
+   #About {
+    top: 130%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    text-align: center;
+    
+  }
+   #About div {
+    /* Edit styles for the specific div inside #About */
+    /* Add your styles here */
+    background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+    
+    
+  }
+  
+   p {
+	   
+	   
+	   font-size: 5px; /* Adjust the font size for the header */
+    text-align: center; 
+	   
+   }
+  
+#birdImage {
+    top: 50%; /* Adjust this value to center the flying bird */
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    background-color: white;
+    mix-blend-mode: multiply;
+  }
+  #Education{
+		position: absolute;
+      top: 185%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}#Education2{
+		position: absolute;
+      top: 120%; /* Adjust this value based on your design */
+      left: 45%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+	#Education1{
+		position: absolute;
+      top: 110%; /* Adjust this value based on your design */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+		
+	}
+	#Contact{
+		position: absolute;
+      top: 350%; /* Adjust this value based on your design */
+      left: 60%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      text-align: right;
+	   max-width: 80%;
+	   }
+	   nav {
+		   
+		   width: 100%;
+		   
+	   }
+ 
+#walkingman {
+    top: 160%; /* Adjust this value to center the flying bird */
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 60%;
+    background-color: white;
+    mix-blend-mode: multiply;
+  }
+  /* Add more styles for other elements as needed */
+}
+
+/* Media query for screens between 769px and 1200px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    /* Adjust styles for medium-sized screens */
+  
+  }
+
+  /* Add more styles for other elements as needed */
+}
+
+/* Media query for screens larger than 1200px (e.g., desktops) */
+@media (min-width: 1201px) {
+  body {
+    /* Adjust styles for larger screens */
+  }
+
+  /* Add more styles for other elements as needed */
+}
+	
+	
+</style>
+
+</head>
+<body>
+
+	 <nav  class="navbar navbar-expand-md navbar-light bg-primary" style="position: absolute; top: 0; width: 100%;">
+        <a class="navbar-brand" href="#">Jaydeep Gaikwad &#128516  <img src="profilepicture.png" alt="Jaydeep gaikwad Profile Picture" style="width: 75px; height: 75px; border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jaydeepcv (2).pdf" onclick="downloadResume()">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+	
+<div style="text-align: center;" id="fallingWord"> <h1> <strong>YOU'RE MOST WELCOME <br>  To MyHome</strong><br> </h1>
+
+
+  <script>
+	  //resume download
+	  function downloadResume() {
+    var link = document.createElement('a');
+    link.href = 'jaydeepcv.pdf';
+    link.download = 'jaydeepcv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+	  
+	  
+	  
+	  
+	  
+    // JavaScript to animate the header
+    const header = document.getElementById('fallingWord');
+
+    // Function to animate the header falling to the center
+    function fallToCenter() {
+      const windowHeight = window.innerHeight;
+      const headerHeight = header.offsetHeight;
+
+      // Set the final position (center of the window)
+      const finalTop = (windowHeight - headerHeight) / 3;
+
+      // Animate the transition
+      header.style.top = `${finalTop}px`;
+    }
+
+    // Call the function to start the animation after a delay (e.g., 2 seconds)
+    setTimeout(fallToCenter, 6);
+    
+     function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Attach click event listeners to navigation links
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetSectionId = link.getAttribute('href').substring(1); // Remove the '#' from the href
+                scrollToSection(targetSectionId);
+            });
+        });
+  </script>
+
+</div>
+<div id="Home"style="text-align: center; color: white;" class="w3-container w3-monospace">
+	
+</div>
+<div id="birdImage"style="text-align: center";>
+<img src="bird-flying.gif" alt="flying bird">
+
+
+
+</div>
+
+<div id="walkingman" style="text-align: center;">
+		 <img src="b0b38da25a5c761bbef6d19cc300439d_w200.gif" alt="walking skull">
+		 
+	 </div>
+ <br>
+ <br>
+ 
+	 
+	 <div id="About" class="card border-info mb-3" style="max-width: 70rem" class="w3-container w3-monospace">
+	<div class="card-header" style="text-align: center;"><h2>Know Me&#128519</h2>
+	<p>
+		Myself Jaydeep Gaikwad I'm from Jabalpur, Madhya Pradesh, INDIA.
+		<br>
+		I'm a keen web developer looking for an Exciting and Challenging job. 
+		<br>
+		I completed my Graduation in <mark>2023</mark> from Gyan Ganga Institute Of
+		<br>
+		Technology and Sciences. And my field of Study was <mark>Information Technology.</mark>
+		<br>
+		<h4>Click To View My Education</h4>
+		
+		<a href="#Education" class="btn btn-primary">Click Me&#128518</a>
+	</p>
+
+	 </div>
+	 
+	 
+	 <div id="education" style="text-align: center;"></div>
+  <div id="Education" class="card border-info mb-3" style="max-width: 40rem" class="w3-container w3-monospace">
+	
+	<div class="card-header" style="text-align: center;"><h3>Education&#128218</h3><br><h2>10th Percantage</h2>
+	<p>
+		St. Francis High School
+		<br>
+		<small>
+			2016-2017
+		</small>
+	<br>
+	<h7><mark>70% out 100%</mark></h7>
+	
+	</div>
+
+ <div id="Education1" class="card border-info mb-3" style="max-width: 30rem" class="w3-container w3-monospace">
+	
+	<div class="card-header" style="text-align: center;"><h2>12th Percantage</h2>
+	<p>
+		St. Joseph Convent High School
+		<br>
+		<small>
+			2018-2019
+		</small>
+	<br>
+	<h7><mark>61.16% out 100%</mark></h7>
+	
+	</div>
+ 
+ <div id="Education2" class="card border-info mb-3" style="max-width: 30rem" class="w3-container w3-monospace">
+	
+	<div class="card-header" style="text-align: center;"><h2>Bachelor Of Technology</h2>
+	<p>
+		Information Technology
+		<br>
+		<small>
+			2019-2023
+		</small>
+	<br>
+	<h7><mark>CGPA- 8.18 OUT OF 10</mark></h7>
+	
+	</div>
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+<div id="Contact" style="text-align: center;">
+	<p>
+	<h5>
+		<i class="fa fa-linkedin-square" style="font-size: 27px;">
+			<a style="color: black;" href="https://www.linkedin.com/in/jaydeep-gaikwad-a5719b234">LinkedIn Profile</a>
+		</i>
+			<br>
+			<br>
+			<a style="color: black;" href="mailto:jaydeep.gaikwad.it19@ggits.net">&#x1F4E7;Click To Mail Me.</a>
+			<br>
+			
+			
+		</h5>
+		<br>
+		<i class="fa fa-github" style="font-size: 27px; color: red;">
+		
+		<a style="color: black;" href="https://github.com/JaydeepGaikwad0/CustomerDetailSystem/tree/master">GitHub Profile</a>
+		
+		
+		</i>
+		
+		
+			<br>
+		</p>
+		
+	</label>	
+	</p>
+	
+</div>
+   
+
+</body>
+</html>
